@@ -1,0 +1,166 @@
+/* Базовые стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+/* Темная тема */
+body.dark {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Шапка */
+header {
+    background-color: #4a6fa5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+/* Навигация */
+nav {
+    margin-bottom: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Кнопка смены темы */
+#themeButton {
+    background-color: white;
+    color: #4a6fa5;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+body.dark #themeButton {
+    background-color: #555;
+    color: white;
+}
+
+/* Секции */
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body.dark section {
+    background-color: #333;
+}
+
+section h2 {
+    color: #4a6fa5;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #4a6fa5;
+    padding-bottom: 5px;
+}
+
+body.dark section h2 {
+    color: #7b9cff;
+    border-color: #7b9cff;
+}
+
+/* Фото */
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 15px auto;
+    border: 5px solid #4a6fa5;
+}
+
+/* Навыки */
+.skills ul {
+    list-style-position: inside;
+    margin-top: 10px;
+}
+
+.skills li {
+    background-color: #e9f2ff;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+body.dark .skills li {
+    background-color: #444;
+}
+
+/* Проекты */
+.project {
+    background-color: #f0f8ff;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 4px solid #4a6fa5;
+    border-radius: 5px;
+}
+
+body.dark .project {
+    background-color: #444;
+    border-left-color: #7b9cff;
+}
+
+.project h3 {
+    color: #4a6fa5;
+}
+
+body.dark .project h3 {
+    color: #7b9cff;
+}
+
+/* Контакты */
+#contacts a {
+    color: #4a6fa5;
+    text-decoration: none;
+}
+
+body.dark #contacts a {
+    color: #7b9cff;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4a6fa5;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+body.dark footer {
+    background-color: #333;
+}
